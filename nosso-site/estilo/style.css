@@ -23,7 +23,7 @@
 
 header {
   background-image: linear-gradient(to bottom, var(--color0), var(--color2));
-  min-height: 100px;
+  min-height: 140px;
   text-align: center;
   padding-top: 20px;
 }
@@ -49,23 +49,21 @@ header h2 {
 
 #burguer {
   color: white;
-  text-align: center; /* pode tirar depois */
   display: block;
   padding: 10px;
+  margin: 10px;
   cursor: pointer;
 }
 
 #burguer:hover {
   background-color: white;
-  color: var(--color2);
+  color: var(--color1);
+  order: 0.5px solid var(--color4);
+  border-radius: 5px;
 }
 
 menu {
   display: none;
-}
-
-menu ul { /* pode tirar depois */
-  list-style-type: none;
 }
 
 menu a {
@@ -79,10 +77,10 @@ menu a {
 }
 
 menu a:hover {
-  font-size: 1.1em;
   background-color: white;
   color: var(--color1);
-  border: 2px solid var(--color4);
+  border: 0.5px solid var(--color4);
+  border-radius: 5px;
 }
 
 main {
@@ -171,6 +169,28 @@ h3 {
 
 .externo::after {
   content: "\00A0\1F4E7\00A0\00A0";
+}
+
+.slot-form-container {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+textarea {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+div input {
+  padding: 5px;
+}
+
+.test{
+  margin-bottom: 10px;
+}
+
+.slot-form-container-btn {
+  text-align: center;
 }
 
 .address {
